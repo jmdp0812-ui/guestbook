@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ry's Guestbook - Menu</title>
+    <style>
+        body {background-image: url("background.png"); background-size: cover; background-attachment: fixed; background-position: center; font-family: "Times New Roman", serif; color: white; margin: 0; scroll-behavior: smooth;}
+        nav {position: fixed; top: 0; width: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); padding: 15px 0; text-align: center; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.1);}
+        nav a {color: white; text-decoration: none; margin: 0 20px; font-size: 18px; font-weight: bold; transition: 0.3s;}
+        nav a:hover {color: #9B51E0; text-shadow: 0 0 10px #9B51E0;}
+        section {min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 20px; box-sizing: border-box;}
+        .card {background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(15px); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); max-width: 500px; width: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);}
+        .profile-info {display: flex; align-items: center; gap: 20px; text-align: left; width: 100%}
+        .profile-img {width: 250px; height: 250px; border-radius: 20%; border: 1px solid #9B51E0; object-fit: cover;}
+        .form input, .form textarea {width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: none; background: rgba(255,255,255,0.9); font-family: Arial, sans-serif; box-sizing: border-box;}
+        .btn-send {background: linear-gradient(135deg, #2F80ED, #9B51E0); color: white; border: none; padding: 12px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; transition: 0.3s; width: 100%;}
+        .contact-grid {display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;}
+        .contact-item {background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#guestbook">GUESTBOOK</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <section id="aboutme">
+        <div class="card">
+            <div class="profile-info">
+                <img src="ava.jpg" alt="Ry" class="profile-img">
+                <div>
+                    <h2 style="margin:0;">Hi cuties, </h2>
+                    <p style="margin:10px 0 0 0;">Whether it’s a short message, a wish, or just something random, I’d really appreciate it if you could leave a few words here. Thank you so much for taking the time to visit — it truly means a lot to me. Luv ya 🤍</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guestbook">
+        <div class="card">
+            <h2 style="margin-top:0;">GUESTBOOK ONLINE</h2>
+            <form class="form">
+                <input type="text" placeholder="Tên của bạn/ Ẩn danh/ Để lại biệt danh cho mình đoán nhó..." required>
+                <textarea rows="4" placeholder="Lời nhắn..."></textarea>
+                <input type="submit" class="s" value="SEND">
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="card">
+            <h2 style="margin-top:0;">Contact Card</h2>
+            <div class="contact-grid">
+                <div class="contact-item">📧 anhtnvfx47448@funix.edu.vn</div>
+                <div class="contact-item">📱 https://www.facebook.com/urluvri08/</div>
+                <div class="contact-item">📍 79 Viet Nam</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
